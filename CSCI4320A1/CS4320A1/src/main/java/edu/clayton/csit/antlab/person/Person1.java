@@ -8,7 +8,7 @@ import java.util.*;
  *  modified string 
  *  
  *  @author Qu
- *  @Revised By: Nicole Penn
+ *  @Revised By: N. Penn
  *  @version 1.1
  */
 public class Person1
