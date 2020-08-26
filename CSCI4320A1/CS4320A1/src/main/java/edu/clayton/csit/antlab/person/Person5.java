@@ -30,8 +30,23 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+	  if(input.length() >= 2){
+		char[] symbols = input.toCharArray();
+		char c1 = input.charAt(0);
+		char c2 = input.charAt(1);
+		for(int i = 2; i< symbols.length; i++){
+			symbols[i-2] = symbols[i];
+		}
+		symbols[symbols.length -2] = c1;
+		symbols[symbols.length -1] = c2;
+		String str = "";
+		for(int i = 0; i< symbols.length; i++){
+			str = str + symbols[i];
+		}
+		System.out.println(str);
+          }
+	  else
+	  	return null;
 	}
 	
 	/**
