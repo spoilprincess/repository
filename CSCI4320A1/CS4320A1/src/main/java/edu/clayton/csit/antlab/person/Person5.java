@@ -35,7 +35,6 @@ public class Person5 {
 		char c1 = input.charAt(0);
 		char c2 = input.charAt(1);
 		for(int i = 2; i< symbols.length; i++){
-			//rotateSyms[]
 			symbols[i-2] = symbols[i];
 		}
 		symbols[symbols.length -2] = c1;
