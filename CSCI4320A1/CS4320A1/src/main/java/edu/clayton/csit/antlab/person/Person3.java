@@ -42,7 +42,16 @@ public class Person3 {
 	 * @return the reversed string
 	 */
 	private String calc(String input) {
-	  //Person 3 put your implementation here
-	  return null;
+		String [] rev = input.split("");
+        	System.out.println(Arrays.toString(rev));
+        	int j = rev.length - 1;
+        	String[] revd = new String[rev.length];
+        	for(int i =0; i < rev.length; i++ ){
+            		revd[i] = rev[j];
+           		j--;
+        	}
+        	String str = String.join("",revd);
+        
+        	return str;
 	}
 }
