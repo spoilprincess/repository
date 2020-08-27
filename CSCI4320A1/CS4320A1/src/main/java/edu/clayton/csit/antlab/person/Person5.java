@@ -43,7 +43,7 @@ public class Person5 {
 		for(int i = 0; i< symbols.length; i++){
 			str = str + symbols[i];
 		}
-		System.out.println(str);
+		return str;
           }
 	  else
 	  	return null;
