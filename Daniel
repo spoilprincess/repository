@@ -5,7 +5,7 @@ import java.util*;
  *  returns their name and a
  *  modified string 
  *
- * @author Adetomiwa "Daniel" Gbogboade
+ * @Author Adetomiwa "Daniel" Gbogboade
  */
 public class Person2 {
     /** Holds the persons real name */
