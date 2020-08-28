@@ -5,8 +5,8 @@ package edu.clayton.csit.antlab.person;
  *  returns their name and a
  *  modified string 
  *  
- *  @author Qu
- *  @version 1.1
+ *  @author Marronee Yarsee
+ *  @version 1.2
  */
 public class Person4 {
   /** Holds the persons real name */
@@ -30,8 +30,15 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      //Person 4 put your implementation here
-      return null;
+      String z = "";
+      
+      //iterates through String input, increases its char value by 1, and adds the new char to the empty string
+      for(int i=0; i < input.length(); i++){
+         char c = input.charAt(i);
+         c+=1;
+         z+=c;
+      }return z;
+     
     }
     
     /**
@@ -45,6 +52,15 @@ public class Person4 {
     public String toString(String input) {
       return name + calc(input);
     }
+
+    public static void main(String[] args){
+      //testing
+      Person4 p4 = new Person4("ron");
+      System.out.println(p4.calc("qwerty135"));
+      System.out.println(p4.calc("JiMbO"));
+    }
+      
+   
 
 }
 
