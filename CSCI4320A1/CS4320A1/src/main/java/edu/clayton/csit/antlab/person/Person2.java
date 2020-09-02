@@ -1,12 +1,11 @@
 package edu.clayton.csit.antlab.person;
-
+import java.util*;
 /**
  *  A simple class for person 2
  *  returns their name and a
  *  modified string 
  *
- * @author Qu
- * @version 1.1
+ * @author Adetomiwa "Daniel" Gbogboade
  */
 public class Person2 {
     /** Holds the persons real name */
@@ -30,8 +29,9 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+     Random rnd = new Random();
+     char c = input.charAt(rnd.nextInt(input.length()));
+     return input;
 	}
 	/**
 	 * Return a string rep of this object
